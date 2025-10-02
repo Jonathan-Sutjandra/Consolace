@@ -16,7 +16,7 @@ function setup() {
     gamestate = "console";
     inputline.style.display = "block";
     lamina.style.display = "block";
-    lamina.textContent = "Welcome to Lamina!\nthe industry command interpereter for space-bourne vessels";
+    lamina.textContent = "Welcome to Lamina!\nthe industry standard command interpereter for space-bourne vessels";
     
     startbutton.style.display = "none";
     inputline.addEventListener("keydown", (e) => {
