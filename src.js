@@ -21,7 +21,7 @@ function setup() {
     startbutton.style.display = "none";
     inputline.addEventListener("keydown", (e) => {
         if (e.key == "Enter") {
-            event.preventDefault();  
+            e.preventDefault();  
             if (e.repeat) {
                 inputline.value = "";
             } else {
