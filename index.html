@@ -5,10 +5,11 @@
 
         <noscript>To use this site, please enable JavaScript.</noscript>
     </head>
-    <body>
+    <body onload="setup()">
         <button id="startbutton">Start Console</button>
+        <textarea id="lamina" value="g" hidden title="" readonly oninput="autogrow(this)"></textarea>
+        <textarea id="inputline" value="g" hidden title="Input to Command Line" oninput="autogrow(this)"></textarea>
 
-        <textarea id="inputline" value="g" hidden title="Input to Command Line"/></textarea>
         <script src="./src.js"></script>
     </body>
 </html>
