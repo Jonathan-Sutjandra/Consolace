@@ -29,13 +29,11 @@ function setup() {
                 prompt();
             }
         }
-        if (inputline.selectionStart == 2) {
-            if (e.key == "ArrowLeft") {
+        if (inputline.selectionStart <= 2) {
+            if (e.key == "ArrowLeft" || e.key == "ArrowUp" || e.key == "Backspace") {
                 e.preventDefault();
             }
-            if (e.key == "Backspace") {
-                e.preventDefault();
-            }
+            inputline.selectionStart = 2
         }
     });
     
